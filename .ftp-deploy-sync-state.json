@@ -1,0 +1,12 @@
+import {deploy} from "@samkirkland/ftp-deploy";
+async function deployMyCode() {
+    console.log("🚚 Deploy started");
+    await deploy({
+        server: "ftp.vemalog.com",
+        username: "vema",
+        password: "2VmID290417",
+        "server-dir": '/application/coba.vemalog.com/'
+    });
+    console.log("🚀 Deploy done!");
+}
+deployMyCode();

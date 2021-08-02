@@ -11,12 +11,6 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
-    # - name: ansible check with centos:centos7
-    #   # replace "master" with any valid ref
-    #   uses: roles-ansible/check-ansible-centos-centos7-action@master
-    #   with:
-    #     targets: "./"
-
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
